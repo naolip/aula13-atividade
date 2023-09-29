@@ -1,0 +1,147 @@
+html{
+    font-family: sans-serif;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #0D0D0D;
+}
+
+.header_logo{
+    width: 5em;
+    height: auto;
+}
+
+#hamburguer{
+    background-color: #F28F38;
+    color: #0D0D0D;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header_nav{
+    background-color: #0D0D0D;
+    display: none;
+}
+
+.header_nav.show {
+    display: block;
+}
+
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a{
+    color: #F28F38;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, #F28F38, #ffffff 50%);
+    color: #0D0D0D;
+}
+
+@media screen and (min-width: 48em){/*768px maior que*/
+
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0D0D0D;
+    }
+
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+
+    .header_nav{
+        display: block;
+    }
+
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+
+    .header_nav a{
+        border-radius: 5px;
+    }
+
+
+    .header_nav a:hover{
+        background-color: #F28F38;
+        color: #ffffff;
+    }
+}
+
+.fundo_main{
+    background-image: url(imagens/fundo_header.jpg);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+footer{
+    background-color: #F2BFAC;
+    padding: 1em;
+    text-align: center;
+}
+
+.logos_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tamanho{
+    width: 2.5em;
+}
+
+.texto_footer{
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin:0;
+    padding-top: .8rem;
+    color: #0D0D0D;
+}
+
+@media screen and (min-width: 48em){/*768px maior que */
+
+    .logos_footer{
+        flex-direction: row;
+        justify-content: center;
+        gap:1.5em;
+    }
+
+}
